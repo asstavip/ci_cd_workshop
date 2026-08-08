@@ -1,0 +1,19 @@
+name: Steps Workflow
+
+on: [push]
+
+jobs:
+  run-steps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+        
+      - name: print repository name
+        run: 'echo "Repository: ${{ github.repository }}"'
+        
+      - name: print branch name
+        run: 'echo "Branch: ${{ github.ref }}"'
+
+      - name: print commit SHA
+        run: 'echo "Commit SHA: ${{ github.sha }}"'
