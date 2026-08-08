@@ -1,0 +1,8 @@
+name: Steps job dependencies Workflow
+
+on:
+  pull_request:
+    
+  push:
+    branches:
+      - main  
