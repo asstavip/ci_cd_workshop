@@ -3,7 +3,7 @@ name: Steps multi-job Workflow
 on: [push]
 
 jobs:
-  run-backend:
+  backend:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -11,7 +11,7 @@ jobs:
       - name: print testing backend
         run: echo "Testing backend"
   
-  run-frontend:
+  frontend:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
